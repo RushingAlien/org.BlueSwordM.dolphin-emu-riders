@@ -31,7 +31,7 @@ index 2055c4d863..163a15f8a5 100644
        const char* data_home = getenv("XDG_DATA_HOME");
        std::string data_path =
            std::string(data_home && data_home[0] == '/' ? data_home :
-@@ -316,11 +299,9 @@ void SetUserDirectory(const std::string& custom_path)
+@@ -353,11 +350,9 @@ void SetUserDirectory(const std::string& custom_path)
        File::SetUserPath(D_CONFIG_IDX, config_path);
        File::SetUserPath(D_CACHE_IDX, cache_path);
        return;

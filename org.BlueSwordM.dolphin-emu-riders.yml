@@ -1,7 +1,7 @@
-app-id: org.DolphinEmu.dolphin-emu
+app-id: org.BlueSwordM.dolphin-emu-riders
 branch: stable
 runtime: org.kde.Platform
-runtime-version: '5.15'
+runtime-version: '5.15-21.08'
 sdk: org.kde.Sdk
 command: dolphin-emu-wrapper
 rename-desktop-file: dolphin-emu.desktop
@@ -112,8 +112,9 @@ modules:
         /app/share/applications/dolphin-emu.desktop
     sources:
       - type: git
-        url: https://github.com/dolphin-emu/dolphin.git
-        commit: db02b50d2ecdfbbc21e19aadc57253c353069f77
+        url: https://github.com/BlueSwordM/dolphin.git
+        tag: 1.0.5
+        commit: bafaab533f6e7980d63e9f222d6f4d4288d185ea
       # prevents dolphin from attempting to write conf files
       # in non-writable paths, typically happens when a user
       # has leftover files from a previous non-flatpak install
