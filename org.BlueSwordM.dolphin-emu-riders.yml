@@ -130,7 +130,7 @@ modules:
       - type: patch
         path: nodirtyversion.patch
       - type: file
-        path: appdata.xml
+        path: org.BlueSwordM.dolphin-emu-riders.appdata.xml
       - type: script
         commands:
           - for i in {0..9}; do
