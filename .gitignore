@@ -1,6 +1,7 @@
-/.flatpak-builder/
-/build/
-/repo/
-/.flatpak/
-/build-dir/
-/_build/
+/.flatpak-builder
+/build
+/repo
+/.flatpak
+/build-dir
+/_build
+/riders-dolphin.flatpak
