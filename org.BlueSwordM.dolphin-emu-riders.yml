@@ -1,7 +1,7 @@
-app-id: org.DolphinEmu.dolphin-emu
+app-id: org.BlueSwordM.dolphin-emu-riders
 branch: stable
 runtime: org.kde.Platform
-runtime-version: 6.4
+runtime-version: "6.4"
 sdk: org.kde.Sdk
 command: dolphin-emu-wrapper
 rename-desktop-file: dolphin-emu.desktop
@@ -106,21 +106,19 @@ modules:
       - /share/man
     post-install:
       - install -D -t ${FLATPAK_DEST}/bin/ dolphin-emu-wrapper
-      - install -Dm644 -t ${FLATPAK_DEST}/share/appdata/ org.DolphinEmu.dolphin-emu.appdata.xml
+      - install -Dm644 -t ${FLATPAK_DEST}/share/appdata/ org.BlueSwordM.dolphin-emu-riders.appdata.xml
       - sed -i -e 's/"2048"/"512"/g' /app/share/icons/hicolor/scalable/apps/dolphin-emu.svg
       - desktop-file-edit --set-key=Exec --set-value='/app/bin/dolphin-emu-wrapper'
         /app/share/applications/dolphin-emu.desktop
     sources:
       - type: git
-        url: https://github.com/dolphin-emu/dolphin.git
-        commit: dadbeb4bae7e7fa23af2b46e0add4143094dc107
+        url: https://github.com/BlueSwordM/dolphin.git
+        commit: 7f4875e1f3cf5d0b6b32115d44fc3207ddf33f6e
+        branch: Dolphin-ExGL
+        # disable-submodules: true
         x-checker-data:
-          type: json
-          url: https://dolphin-emu.org/update/latest/beta
-          commit-query: .hash
-          version-query: .shortrev
-          timestamp-query: .date
-          is-main-source: true
+          type: git
+          tag: ^([\d.]+)
       # detects whether dolphin is running in a flatpak sandbox
       # and makes it use xdg directories if it is.
       # prevents dolphin from attempting to write conf files
@@ -132,7 +130,7 @@ modules:
       - type: patch
         path: nodirtyversion.patch
       - type: file
-        path: org.DolphinEmu.dolphin-emu.appdata.xml
+        path: org.BlueSwordM.dolphin-emu-riders.appdata.xml
       - type: script
         commands:
           - |

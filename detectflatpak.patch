@@ -11,7 +11,7 @@ diff --git a/Source/Core/UICommon/UICommon.cpp b/Source/Core/UICommon/UICommon.c
 index 8d9dc2abb8..8a9d39a3d5 100644
 --- a/Source/Core/UICommon/UICommon.cpp
 +++ b/Source/Core/UICommon/UICommon.cpp
-@@ -348,7 +348,7 @@ void SetUserDirectory(std::string custom_path)
+@@ -361,7 +361,7 @@ void SetUserDirectory(std::string custom_path)
      //    -> Use GetExeDirectory()/User
      // 2. $DOLPHIN_EMU_USERPATH is set
      //    -> Use $DOLPHIN_EMU_USERPATH
@@ -20,7 +20,7 @@ index 8d9dc2abb8..8a9d39a3d5 100644
      //    -> Use ~/.dolphin-emu
      // 4. Default
      //    -> Use XDG basedir, see
-@@ -381,7 +381,7 @@ void SetUserDirectory(std::string custom_path)
+@@ -394,7 +394,7 @@ void SetUserDirectory(std::string custom_path)
      {
        user_path = home_path + "." DOLPHIN_DATA_DIR DIR_SEP;
  
@@ -29,6 +29,5 @@ index 8d9dc2abb8..8a9d39a3d5 100644
        {
          const char* data_home = getenv("XDG_DATA_HOME");
          std::string data_path =
--- 
+--
 2.37.1
-

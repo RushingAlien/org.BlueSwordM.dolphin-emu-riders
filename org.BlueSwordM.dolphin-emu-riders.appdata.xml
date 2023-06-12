@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!-- Copyright 2016 Jeremy Newton -->
 <application>
-  <id type="desktop">dolphin-emu.desktop</id>
+  <id type="desktop">dolphin-emu-riders.desktop</id>
   <name>Dolphin Emulator</name>
-  <summary>GameCube / Wii / Triforce Emulator</summary>
+  <summary>GameCube / Wii / Triforce Emulator, patched for Sonic Riders Tournametn Edition</summary>
   <metadata_license>CC-BY-SA-3.0</metadata_license>
   <project_license>GPL-2.0+</project_license>
   <content_rating type="oars-1.0"/>
@@ -20,14 +20,10 @@
   </screenshots>
   <provides>
     <binary>dolphin-emu</binary>
-    <id>dolphin-emu.desktop</id>
+    <id>dolphin-emu-riders.desktop</id>
   </provides>
   <releases>
-    <release version="5.0-19368" date="2023-05-11"/>
-    <release version="5.0-18498" date="2023-02-03"/>
-    <release version="5.0-17995" date="2022-12-04"/>
-    <release version="5.0-17269" date="2022-09-03"/>
-    <release version="5.0-17210" date="2022-08-19"/>
+    <release version="1.0.5" date="2021-11-19"/>
   </releases>
   <url type="homepage">https://dolphin-emu.org</url>
   <url type="help">https://forums.dolphin-emu.org</url>
