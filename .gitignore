@@ -1,3 +1,6 @@
 /.flatpak-builder/
 /build/
 /repo/
+/.flatpak/
+/build-dir/
+/_build/
